@@ -1,4 +1,4 @@
 # Blog-App-Django
 
 This is an Blog app.\
-User can write Blog.\
+User can write Blog.
