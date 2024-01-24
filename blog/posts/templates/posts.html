@@ -40,19 +40,17 @@
 </head>
 <body>
     <h1 style="color:red;">MyBlog</h1>
-    <button style="background-color: #007bff; color: #fff; border: 2px solid #007bff; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Add</button>
 
 
-    {% for post in posts reversed %}
+  
     <div class="post-container">
-        <a style = "text-decoration: none" href='/post/{{post.id}}'>
-            <h1>{{ post.title }}</h1>
+        <a style = "text-decoration: none" href='posts.html'>
+            <h1>{{ posts.title }}</h1>
         </a>
-            <h3>{{ post.created_at }}</h3>
-            <p>{{ post.body | truncatewords:20}}</p>
-            <button style="background-color: #007bff; color: #fff; border: 2px solid #007bff; border-radius: 5px; padding: 5px 10px; cursor: pointer;">Delete</button>
+            <h3>{{ posts.created_at }}</h3>
+            <p>{{ posts.body }}</p>
         
     </div>
-    {% endfor %}
+  
 </body>
 </html>
